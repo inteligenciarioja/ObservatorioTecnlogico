@@ -9,6 +9,8 @@ import json
 import csv
 import time
 import MySQLdb
+import matplotlib.pyplot as plt
+import numpy as np
 from pprint import pprint
 #Creación de la tabla en la base de datos
 #CREATE TABLE IDAnalisis (Region varchar(30), Year varchar(10) , LastUpdateDate varchar(20), id varchar(30) primary key,GastoIDTotalMilesEuros varchar(20), GastoIDTotalPorc varchar(20),GastoIDADPubMilesEuros varchar(20), GastoIDAPubPorc varchar(20),GastoIDEnsSupMilesEuros varchar(20), GastoIDEnsSupPorc varchar(20),GastoIDEmpmilesEuros varchar(20),GastoIDEmpPorc varchar(20),GastoIDIPSFLMilesEuros varchar(20),GastoIDIPSFLPorc varchar(20), PorcaPIB varchar(20));
@@ -47,7 +49,33 @@ def actlista (jsonact, yearfuncact, listareg) :
     for i in range (0, len(listareg)) :
         listareg[i].append(encontrarIDPIBMer (jsonact, listareg [i][0], str(yearfuncact)))
     return listareg
+def incluirBD(listainc) :
+    for i in range (0,len(listainc)) :
+        var_string = ', '.join('?' * len(listainc [i]))
+        straux = "','".join(listainc [i])
+        strauxfinal = "'"+straux+"'"
+        querystring = """INSERT INTO exampledb.IDAnalisis (Region, Year, LastUpdateDate, id ,GastoIDTotalMilesEuros , GastoIDTotalPorc ,GastoIDADPubMilesEuros ,
+        GastoIDAPubPorc ,GastoIDEnsSupMilesEuros , GastoIDEnsSupPorc ,GastoIDEmpmilesEuros ,GastoIDEmpPorc ,
+        GastoIDIPSFLMilesEuros ,GastoIDIPSFLPorc , PorcaPIB ) VALUES (""" + strauxfinal + """);"""
+        dbconnection = MySQLdb.connect(host='localhost',db='exampledb',
+                              user='exampleuser', passwd='pimylifeup')
+        #print(querystring)
+        c = dbconnection.cursor()
+        c.execute(querystring)
+        dbconnection.commit()
+        c.close()
+        dbconnection.close()
 
+def limpiarBD() :
+    dbconnection = MySQLdb.connect(host='localhost',db='exampledb',
+                              user='exampleuser', passwd='pimylifeup')
+    querystringlimp = "DELETE FROM exampledb.IDAnalisis"
+    c = dbconnection.cursor()
+    c.execute(querystringlimp)
+    dbconnection.commit()
+    c.close()
+    dbconnection.close()
+    
 # Send GET to final Destination
 #r = requests.get("http://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/DCC50?nult=10")
 # Obtain JSON
@@ -79,10 +107,7 @@ yearnow = time.gmtime(time.time()).tm_year
 # Porcentaje de gastos en I+D respecto al PIB a precios de mercado por comunidades autónomas. Serie 2003-2016
 statuscode = "404"
 yearquery = yearnow
-#dbconnection = MySQLdb.connect(host='localhost',db='exampledb',
-#                               user='exampleuser', passwd='pimylifeup')
-
-#c = dbconnection.cursor()
+limpiarBD()
 
 while (statuscode !=  "200" ) :
         IDPorcPIB = requests.get("http://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/t14/p057/a"+str(yearquery)+"/l0/02007.px")
@@ -621,7 +646,7 @@ for year in range (2010,yearnow) :
         actlista (IDTotaljson, year, lista)
         #Andalucia.append(encontrarIDPIBMer (IDTotaljson, "Andalucía", str(year)))
         #print ("Prueba funcin id sobre pib mercado - Año"+str(year) +" valor" + res)
-
+# ------------------------------------------------------------------------------------------------------------------
         # Phase 2) Connect & Insert information in a csv
         with open ('I+DGastos.csv',mode='a') as employee_file :
             employee_writer = csv.writer(employee_file, delimiter=';',quoting = csv.QUOTE_MINIMAL)
@@ -652,36 +677,97 @@ for year in range (2010,yearnow) :
             #print(', '.join(Nacional))
 
             
-
-#       Phase4) Transfer csv to Database
+# ---------------------------------------------------------------------------------------------------------------------------
+#       Phase3) Transfer csv to Database
 # Hay que definir una funcion que recorra toda la lista y que vaya uno por uno
 # generando el string y haciendo la insercion. Como no necesitaremos hacer cargas
 # acumulativas - upserts - borraremos la tabla en cada momento que se ejecute
+# EXAMPLE
+        #var_string = ', '.join('?' * len(Nacional))
+        #straux = "','".join(Nacional)
+        #strauxfinal = "'"+straux+"'"
+        #querystring = """INSERT INTO exampledb.IDAnalisis (Region, Year, LastUpdateDate, id ,GastoIDTotalMilesEuros , GastoIDTotalPorc ,GastoIDADPubMilesEuros ,
+        #GastoIDAPubPorc ,GastoIDEnsSupMilesEuros , GastoIDEnsSupPorc ,GastoIDEmpmilesEuros ,GastoIDEmpPorc ,
+        #GastoIDIPSFLMilesEuros ,GastoIDIPSFLPorc , PorcaPIB ) VALUES (""" + strauxfinal + """);"""
+        #print(querystring)
 
-        var_string = ', '.join('?' * len(Nacional))
-        straux = "','".join(Nacional)
-        strauxfinal = "'"+straux+"'"
-        querystring = """INSERT INTO exampledb.IDAnalisis (Region, Year, LastUpdateDate, id ,GastoIDTotalMilesEuros , GastoIDTotalPorc ,GastoIDADPubMilesEuros ,
-        GastoIDAPubPorc ,GastoIDEnsSupMilesEuros , GastoIDEnsSupPorc ,GastoIDEmpmilesEuros ,GastoIDEmpPorc ,
-        GastoIDIPSFLMilesEuros ,GastoIDIPSFLPorc , PorcaPIB ) VALUES (""" + strauxfinal + """);"""
-        print(querystring)
+        #dbconnection = MySQLdb.connect(host='localhost',db='exampledb',
+        #                       user='exampleuser', passwd='pimylifeup')
 
-        dbconnection = MySQLdb.connect(host='localhost',db='exampledb',
-                               user='exampleuser', passwd='pimylifeup')
+        #c = dbconnection.cursor()
+        #c.execute(querystring)
+        #dbconnection.commit()
+        #c.close()
 
-        c = dbconnection.cursor()
-        c.execute(querystring)
-        dbconnection.commit()
-        c.close()
-
-
-        
-
+        incluirBD(lista) 
 
 
+#       Phase 4) Retrieving data to be plotted
+# Plotearemos el gatos interno de la rioja de 2010 hasta ahora
+
+# GASTO I+D LA RIOJA
+querycount = """SELECT count(id) FROM exampledb.IDAnalisis WHERE Region = 'Rioja'"""
+querystring = """SELECT id, Year, GastoIDTotalMilesEuros FROM exampledb.IDAnalisis WHERE Region = 'Rioja'"""
+#print(querystring)
+dbconnection = MySQLdb.connect(host='localhost',db='exampledb',
+                              user='exampleuser', passwd='pimylifeup')
+c = dbconnection.cursor()
+c.execute(querystring)
+result = c.fetchall()
+#print(result [0] [0])
+axisx = []
+axisy = []
+for row in result :
+    if (row[2] != '-1') :
+        axisx.append(int(row[1]))
+        axisy.append(float(row[2]))
+c.close()
+dbconnection.close()
+print(axisx)
+print(axisy)
 
 
 
+# EVOLUCIÓN DEL GASTO INTERNO SOBRE EL PIB EN %
+yearint = 2017
 
+#querystring = """SELECT id, Year, PorcaPIB FROM exampledb.IDAnalisis WHERE Year = '""" + str(yearint) + """' OR Year = '"""+str(yearnow-1)+"""'"""
+querystring = """SELECT id, Region, Year, PorcaPIB FROM exampledb.IDAnalisis WHERE Year = '""" + str(yearint) + """'"""
+dbconnection = MySQLdb.connect(host='localhost',db='exampledb',
+                              user='exampleuser', passwd='pimylifeup')
+c = dbconnection.cursor()
+c.execute(querystring)
+result = c.fetchall()
+Group = []
+values = []
+for row in result :
+    #print(row)
+    Group.append(str(row [1]))
+    values.append(float(row [3]))
 
-
+querystring = """SELECT id, Region, Year, PorcaPIB FROM exampledb.IDAnalisis WHERE Year = '""" + str(yearint-1) + """'"""
+c.execute(querystring)
+result= c.fetchall()
+Groupant = []
+valuesant = []
+for row in result :
+    #print(row)
+    Groupant.append(str(row [1]))
+    valuesant.append(float(row [3]))
+plt.figure()
+#plt.subplot('121')
+plt.title('Gasto I+D Rioja. Miles de Euros')
+plt.plot(axisx,axisy,'go')
+plt.plot(axisx,axisy,'k')
+#plt.subplot('122')
+plt.figure()
+barwith = 0.25
+x = np.arange(len(Group))
+x2 = [b + barwith for b in x]
+plt.bar(x,values, width = barwith, label = '2017')
+plt.bar(x2,valuesant, width = barwith, label = '2016')
+plt.xticks(x,Group)
+plt.legend()
+plt.show()
+c.close()
+dbconnection.close()
