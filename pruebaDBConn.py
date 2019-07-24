@@ -8,7 +8,7 @@ db_connection = MySQLdb.connect(host='localhost',db='exampledb',
 print("Me he conectado")
 
 c = db_connection.cursor()
-c.execute("INSERT INTO exampledb.example (id, name, job) VALUES (null, 'Marcos', 'Ingeniero')")
+c.execute("INSERT INTO exampledb.example (id, name, job) VALUES ('8', 'Joaquin', 'Estanquero')")
 c.execute("SELECT * FROM exampledb.example")
 print (c.fetchall)
 

@@ -11,7 +11,14 @@ import time
 import MySQLdb
 import matplotlib.pyplot as plt
 import numpy as np
+import dash
+import dash_core_components as dcc
+import dash_html_components as html
+from reportlab.pdfgen import canvas
+from reportlab.lib.pagesizes import A4
 from pprint import pprint
+from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
+from matplotlib.figure import Figure
 #Creación de la tabla en la base de datos
 #CREATE TABLE IDAnalisis (Region varchar(30), Year varchar(10) , LastUpdateDate varchar(20), id varchar(30) primary key,GastoIDTotalMilesEuros varchar(20), GastoIDTotalPorc varchar(20),GastoIDADPubMilesEuros varchar(20), GastoIDAPubPorc varchar(20),GastoIDEnsSupMilesEuros varchar(20), GastoIDEnsSupPorc varchar(20),GastoIDEmpmilesEuros varchar(20),GastoIDEmpPorc varchar(20),GastoIDIPSFLMilesEuros varchar(20),GastoIDIPSFLPorc varchar(20), PorcaPIB varchar(20));
 
@@ -768,6 +775,18 @@ plt.bar(x,values, width = barwith, label = '2017')
 plt.bar(x2,valuesant, width = barwith, label = '2016')
 plt.xticks(x,Group)
 plt.legend()
-plt.show()
+plt.savefig('Test.png')        
+#plt.show()
+
+# Phase 5) Processing and generate automatic reports
+w, h = A4
+d = canvas.Canvas("Hola-mundo.pdf", pagesize = A4)
+d.drawString(50,h-50,"Hola mundo")
+d.drawImage("Test.png",50,h-500, width = 200, height = 200)
+d.showPage()
+d.save()
 c.close()
 dbconnection.close()
+
+# Phase 6) Let's try to create a Dash
+# Program app.py will be updating dash consulting to SQL databases
