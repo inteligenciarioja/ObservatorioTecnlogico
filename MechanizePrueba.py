@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
+import time
 
 import os
 
@@ -51,8 +52,10 @@ select1.select_by_visible_text('2. Patentes Vía Nacional')
 </select>
 '''
 wait = WebDriverWait(browser,10)
+time.sleep(5)
 element = wait.until(EC.visibility_of_element_located((By.ID,'FiltroInicial:desplegableTipoEstadistica')))
 select2 = Select(browser.find_element_by_id('FiltroInicial:desplegableTipoEstadistica'))
+print(select2.options)
 select2.select_by_value('4')
 '''
 <select id="FiltroInicial:desplegableEstadistica" name="FiltroInicial:desplegableEstadistica" class="txt w_540" size="1" onchange="mojarra.ab(this,event,'valueChange',0,'FiltroInicial:panelCriterios')">	<option value="">-- seleccione Estadistica --</option>
@@ -63,8 +66,12 @@ select2.select_by_value('4')
 	<option value="36">5. Solicitudes de Patentes publicadas por Unidades Técnicas y clases CIP, distribuidas por provincias</option>
 </select>
 '''
-
+wait = WebDriverWait(browser,10)
+time.sleep(5)
 select3 = Select(browser.find_element_by_id('FiltroInicial:desplegableEstadistica'))
+print(select3.options)
+browser.find_element_by_id("FiltroInicial:desplegableEstadistica").click()
+wait = WebDriverWait(browser,10)
 select3.select_by_value('17')
 '''
 <select id="FiltroInicial:anualidadDesde" name="FiltroInicial:anualidadDesde" class="txt w_50" size="1" onchange="mojarra.ab(this,event,'valueChange',0,'FiltroInicial:anualidadHasta')">	<option value="2009" selected="selected">2009</option>
@@ -79,6 +86,7 @@ select3.select_by_value('17')
 	<option value="2018">2018</option>
 </select>
 '''
+time.sleep(5)
 browser.implicitly_wait(10)
 select4 = Select(browser.find_element_by_id('FiltroInicial:anualidadDesde'))
 select4.select_by_value('2009')
@@ -96,6 +104,7 @@ select4.select_by_value('2009')
 	<option value="2018" selected="selected">2018</option>
 </select>
 '''
+time.sleep(1)
 browser.implicitly_wait(10)
 select5 = Select(browser.find_element_by_id('FiltroInicial:anualidadHasta'))
 select5.select_by_value('2018')
@@ -103,19 +112,35 @@ select5.select_by_value('2018')
 '''
 <input id="FiltroInicial:j_idt73" type="submit" name="FiltroInicial:j_idt73" value="" class="addAll" onclick="mojarra.ab(this,event,'action','FiltroInicial:AutonomiaDesde','FiltroInicial:AutonomiaDesde FiltroInicial:AutonomiaHasta');return false">
 '''
+time.sleep(1)
 browser.implicitly_wait(10)
-browser.find_element_by_id("FiltroInicial:j_idt73").click()
+browser.find_element_by_id("FiltroInicial:j_idt85").click()
 '''
 <input id="FiltroInicial:j_idt109" type="submit" name="FiltroInicial:j_idt109" value="" class="addAll" onclick="mojarra.ab(this,event,'action','FiltroInicial:STDesde','FiltroInicial:STDesde FiltroInicial:STHasta');return false">
 '''
+time.sleep(1)
 browser.implicitly_wait(10)
 browser.find_element_by_id("FiltroInicial:j_idt109").click()
 '''
 browser.implicitly_wait(10)
 <input type="submit" name="FiltroInicial:j_idt177" value="Buscar">
 '''
+time.sleep(1)
 browser.implicitly_wait(10)
-browser.find_element_by_id("FiltroInicial:j_idt177").click()                              
+browser.find_element_by_name("FiltroInicial:j_idt177").click()                              
                                
 
-    
+'''f
+<a id="btnExport__" href="javascript:descargarExcel()"> <img title="Exportar a Excel" src="resources/export_excel_icon.jpg">
+				</a>'''
+browser.implicitly_wait(10)
+time.sleep(20)
+print('Ya estoy en la otra página')
+
+'''
+element = browser.find_element_by_id('btnExport__')
+element.click()
+'''
+a = browser.find_element_by_id("btnExport__")
+a.click()
+browser.quit()
