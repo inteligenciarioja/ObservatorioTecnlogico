@@ -19,6 +19,48 @@ import time
 import os
 import csv
 
+import MySQLdb
+import time
+
+def incluirBD(df, year) :
+    # CREATE TABLE SOLPCTHAB(CCAA varchar(30), Solicitudes varchar(30), VarAnual varchar(30), PorcSobreTotalES varchar(30), Nhabitantes varchar(30), PorcHabitantesfrentetotalES varchar(30),RatioSolMillonHab varchar(30), DesviacionMedida varchar(30),Year varchar(30));
+    header = df.iloc[0]
+    fecha = time.strftime("%Y-%m-%d", time.gmtime())
+    for i in range(1, df.shape[0]) :
+        row = df.iloc[i]
+        final = float(df.shape[0])
+        porcentaje = (float(i)/final)*100
+        print(str(i) + str(year) + str(porcentaje))
+        lista = row.values.tolist()
+        lista.append(str(year))
+        listafinal = [str(item) for item in lista]
+        straux = "','".join(listafinal)
+        strauxfinal = "'"+straux+"'"
+        querystring = ("""INSERT INTO exampledb.SOLPCTHAB"""
+            """(CCAA, Solicitudes, VarAnual, PorcSobreTotalES,  """
+            """Nhabitantes, PorcHabitantesfrentetotalES,"""
+            """RatioSolMillonHab, DesviacionMedida, Year)"""
+                       """ VALUES (""" + strauxfinal + """ );""")
+        dbconnection = MySQLdb.connect(host='localhost',db='exampledb',
+                          user='exampleuser', passwd='pimylifeup')
+        #print(querystring)
+        c = dbconnection.cursor()
+        c.execute(querystring)
+        dbconnection.commit()
+        c.close()
+        dbconnection.close()
+
+def limpiarBD() :
+    dbconnection = MySQLdb.connect(host='localhost',db='exampledb',
+                              user='exampleuser', passwd='pimylifeup')
+    querystringlimp = "DELETE FROM exampledb.SOLPCTHAB"
+    c = dbconnection.cursor()
+    c.execute(querystringlimp)
+    dbconnection.commit()
+    c.close()
+    dbconnection.close()
+
+limpiarBD()
 
 with open ('SOL PCT HAB.csv', mode = 'a') as employee_file:
         employee_writer = csv.writer(employee_file, delimiter=';', quoting = csv.QUOTE_MINIMAL)
@@ -188,4 +230,5 @@ for year in range (2005,2019) :
             row =  [df[j][i] for j in range (0,df.shape[1])]
             row.append(str(year))
             employee_writer.writerow(row)
+    incluirBD(df, year)
 browser.quit()

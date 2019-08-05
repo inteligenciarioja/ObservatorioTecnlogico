@@ -194,7 +194,7 @@ def update_bargraph(Year_barchart__) :
 
     
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
 
 
 #querystring = """SELECT id, Region, Year, PorcaPIB FROM exampledb.IDAnalisis WHERE Year = '""" + str(yearint) + """'"""

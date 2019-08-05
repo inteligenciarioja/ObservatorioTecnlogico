@@ -18,8 +18,50 @@ import shutil
 import time
 import os
 import csv
+import MySQLdb
+import time
 
+def incluirBD(df) :
+    # CREATE TABLE ENVIGORPROVINCIAS(Provincia varchar(30), SubsectorTec varchar(30), NPublicadas varchar(30), Year varchar(30), lastupdate varchar(30));
+    header = df.iloc[0]
+    fecha = time.strftime("%Y-%m-%d", time.gmtime())
+    for i in range(1, df.shape[0]) :
+        row = df.iloc[i]
+        final = float(df.shape[0])
+        porcentaje = (float(i)/final)*100
+        print(str(porcentaje))
+        for j in range(2,len(row)) :
+            Provincia = row[0]
+            SubsectorTec = row[1]
+            Npublicadas = row[j]
+            Year = header[j]
+            lastupdate = fecha
+            lista = "'"+ str(Provincia)+"','" + str(SubsectorTec)+"','" + str(Npublicadas) +"','" + str(Year) +"','" + str(lastupdate) + "'"
+            #straux = "','".join(lista)
+            #strauxfinal = "'"+straux+"'"
+            
+            querystring = """INSERT INTO exampledb.ENVIGORPROVINCIAS (Provincia, SubsectorTec, NPublicadas, Year, lastupdate) VALUES (""" + lista + """);"""
+            #print(querystring)
+            dbconnection = MySQLdb.connect(host='localhost',db='exampledb',
+                          user='exampleuser', passwd='pimylifeup')
+            #print(querystring)
+            c = dbconnection.cursor()
+            c.execute(querystring)
+            dbconnection.commit()
+            c.close()
+            dbconnection.close()
 
+def limpiarBD() :
+    dbconnection = MySQLdb.connect(host='localhost',db='exampledb',
+                              user='exampleuser', passwd='pimylifeup')
+    querystringlimp = "DELETE FROM exampledb.ENVIGORPROVINCIAS"
+    c = dbconnection.cursor()
+    c.execute(querystringlimp)
+    dbconnection.commit()
+    c.close()
+    dbconnection.close()
+
+limpiarBD()  
 # Configuración del Driver en función del navegador
 # Safari
 #os.environ["SELENIUM_SERVER_JAR"] = "selenium-server-standalone-2.41.0.jar"
@@ -178,3 +220,4 @@ with open ('ENVIGORPROVINCIAS.csv', mode = 'a') as employee_file:
     for i in range (0,df.shape[0]) :
         row =  [df[j][i] for j in range (0,df.shape[1])]
         employee_writer.writerow(row)
+incluirBD(df)

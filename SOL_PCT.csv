@@ -120,3 +120,247 @@ PAIS VASCO;Particulares Hombres;14.0;18.0;13.0;14.0;16.0;17.0;18.0;17.0;11.0;4.0
 PAIS VASCO;Particulares Mujeres;2.0;2.0;1.0;1.0;1.0;1.0;1.0;nan;nan;1.0
 PAIS VASCO;Universidades;3.0;9.0;10.0;8.0;9.0;4.0;1.0;1.0;4.0;4.0
 nan;TOTAL;1.252;1.415;1.3030000000000002;1.255;1.222;1.226;1.155;1.094;1.013;931.0
+CC.AA.;Tipo Solicitante;2009.0;2010.0;2011.0;2012.0;2013.0;2014.0;2015.0;2016.0;2017.0;2018.0
+ANDALUCIA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;1.0
+ANDALUCIA;Empresas;37.0;67.0;53.0;39.0;52.0;58.0;62.0;43.0;36.0;22.0
+ANDALUCIA;Organismos Públicos;1.0;14.0;18.0;30.0;21.0;24.0;27.0;20.0;16.0;17.0
+ANDALUCIA;Particulares Hombres;26.0;25.0;39.0;42.0;40.0;52.0;46.0;46.0;43.0;43.0
+ANDALUCIA;Particulares Mujeres;nan;5.0;2.0;3.0;2.0;7.0;2.0;1.0;10.0;2.0
+ANDALUCIA;Universidades;67.0;69.0;73.0;81.0;60.0;66.0;62.0;31.0;49.0;37.0
+ARAGON;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+ARAGON;Empresas;10.0;14.0;16.0;24.0;15.0;15.0;13.0;18.0;20.0;18.0
+ARAGON;Organismos Públicos;5.0;1.0;2.0;1.0;3.0;nan;1.0;nan;nan;nan
+ARAGON;Particulares Hombres;14.0;12.0;5.0;7.0;7.0;5.0;15.0;9.0;7.0;7.0
+ARAGON;Particulares Mujeres;nan;nan;1.0;1.0;nan;nan;nan;1.0;nan;nan
+ARAGON;Universidades;9.0;12.0;4.0;9.0;6.0;6.0;6.0;5.0;2.0;2.0
+ASTURIAS;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+ASTURIAS;Empresas;9.0;6.0;8.0;9.0;4.0;8.0;4.0;5.0;2.0;1.0
+ASTURIAS;Organismos Públicos;nan;nan;nan;2.0;nan;2.0;1.0;nan;nan;nan
+ASTURIAS;Particulares Hombres;5.0;6.0;6.0;nan;6.0;1.0;1.0;6.0;4.0;5.0
+ASTURIAS;Particulares Mujeres;nan;nan;nan;1.0;nan;nan;1.0;nan;nan;nan
+ASTURIAS;Universidades;3.0;3.0;2.0;3.0;1.0;3.0;3.0;2.0;3.0;1.0
+CANARIAS;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CANARIAS;Empresas;3.0;16.0;9.0;2.0;5.0;8.0;2.0;2.0;9.0;7.0
+CANARIAS;Organismos Públicos;1.0;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CANARIAS;Particulares Hombres;7.0;7.0;7.0;4.0;10.0;8.0;11.0;7.0;10.0;7.0
+CANARIAS;Particulares Mujeres;nan;1.0;nan;nan;1.0;nan;1.0;4.0;1.0;2.0
+CANARIAS;Universidades;2.0;3.0;1.0;1.0;1.0;1.0;1.0;2.0;3.0;nan
+CANTABRIA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CANTABRIA;Empresas;6.0;4.0;6.0;4.0;5.0;3.0;4.0;11.0;13.0;6.0
+CANTABRIA;Organismos Públicos;nan;nan;1.0;nan;1.0;nan;2.0;nan;nan;nan
+CANTABRIA;Particulares Hombres;1.0;3.0;2.0;4.0;2.0;3.0;2.0;3.0;4.0;5.0
+CANTABRIA;Particulares Mujeres;nan;1.0;2.0;nan;nan;nan;nan;nan;nan;1.0
+CANTABRIA;Universidades;1.0;2.0;4.0;5.0;12.0;5.0;3.0;2.0;2.0;nan
+CASTILLA LA MANCHA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CASTILLA LA MANCHA;Empresas;13.0;8.0;12.0;7.0;17.0;4.0;4.0;7.0;2.0;7.0
+CASTILLA LA MANCHA;Organismos Públicos;2.0;nan;nan;1.0;nan;nan;nan;nan;nan;nan
+CASTILLA LA MANCHA;Particulares Hombres;4.0;7.0;5.0;9.0;11.0;9.0;12.0;5.0;9.0;6.0
+CASTILLA LA MANCHA;Particulares Mujeres;1.0;1.0;3.0;nan;2.0;1.0;nan;1.0;1.0;nan
+CASTILLA LA MANCHA;Universidades;nan;6.0;6.0;nan;2.0;1.0;nan;1.0;3.0;2.0
+CASTILLA LEON;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CASTILLA LEON;Empresas;16.0;10.0;7.0;11.0;14.0;14.0;12.0;10.0;10.0;9.0
+CASTILLA LEON;Organismos Públicos;2.0;3.0;3.0;7.0;3.0;4.0;2.0;3.0;nan;nan
+CASTILLA LEON;Particulares Hombres;10.0;11.0;8.0;3.0;11.0;7.0;10.0;7.0;4.0;12.0
+CASTILLA LEON;Particulares Mujeres;1.0;nan;nan;1.0;nan;3.0;1.0;1.0;1.0;nan
+CASTILLA LEON;Universidades;3.0;5.0;4.0;7.0;10.0;8.0;4.0;7.0;8.0;6.0
+CATALUÑA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CATALUÑA;Empresas;89.0;116.0;111.0;121.0;116.0;150.0;133.0;136.0;117.0;113.0
+CATALUÑA;Organismos Públicos;5.0;11.0;2.0;7.0;4.0;3.0;11.0;1.0;1.0;3.0
+CATALUÑA;Particulares Hombres;72.0;88.0;79.0;11.0;61.0;86.0;62.0;58.0;58.0;56.0
+CATALUÑA;Particulares Mujeres;8.0;3.0;9.0;74.0;9.0;8.0;6.0;10.0;8.0;3.0
+CATALUÑA;Universidades;33.0;36.0;39.0;38.0;47.0;20.0;23.0;11.0;7.0;10.0
+CEUTA Y MELILLA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CEUTA Y MELILLA;Empresas;nan;nan;nan;nan;nan;nan;nan;nan;1.0;nan
+CEUTA Y MELILLA;Organismos Públicos;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CEUTA Y MELILLA;Particulares Hombres;nan;nan;nan;nan;nan;nan;2.0;nan;nan;nan
+CEUTA Y MELILLA;Particulares Mujeres;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CEUTA Y MELILLA;Universidades;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+COMUNIDAD VALENCIANA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+COMUNIDAD VALENCIANA;Empresas;76.0;55.0;64.0;61.0;70.0;59.0;52.0;48.0;63.0;77.0
+COMUNIDAD VALENCIANA;Organismos Públicos;5.0;5.0;5.0;9.0;2.0;1.0;2.0;3.0;nan;1.0
+COMUNIDAD VALENCIANA;Particulares Hombres;41.0;47.0;50.0;44.0;34.0;42.0;34.0;40.0;50.0;33.0
+COMUNIDAD VALENCIANA;Particulares Mujeres;4.0;5.0;7.0;1.0;2.0;10.0;10.0;2.0;7.0;1.0
+COMUNIDAD VALENCIANA;Universidades;34.0;28.0;29.0;36.0;34.0;32.0;38.0;41.0;37.0;30.0
+EXTREMADURA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+EXTREMADURA;Empresas;nan;5.0;nan;2.0;2.0;1.0;1.0;3.0;4.0;1.0
+EXTREMADURA;Organismos Públicos;nan;nan;1.0;nan;1.0;nan;1.0;nan;nan;nan
+EXTREMADURA;Particulares Hombres;3.0;2.0;nan;3.0;3.0;4.0;5.0;5.0;3.0;1.0
+EXTREMADURA;Particulares Mujeres;1.0;nan;nan;nan;nan;1.0;nan;nan;nan;nan
+EXTREMADURA;Universidades;nan;2.0;1.0;4.0;1.0;1.0;1.0;1.0;nan;nan
+GALICIA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+GALICIA;Empresas;9.0;17.0;22.0;22.0;16.0;18.0;13.0;18.0;18.0;15.0
+GALICIA;Organismos Públicos;nan;4.0;1.0;1.0;nan;nan;1.0;nan;nan;nan
+GALICIA;Particulares Hombres;13.0;18.0;18.0;14.0;16.0;15.0;8.0;11.0;12.0;12.0
+GALICIA;Particulares Mujeres;1.0;1.0;1.0;1.0;1.0;nan;nan;1.0;2.0;2.0
+GALICIA;Universidades;14.0;12.0;27.0;23.0;15.0;24.0;10.0;15.0;9.0;10.0
+ILLES BALEARS;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+ILLES BALEARS;Empresas;1.0;3.0;4.0;nan;4.0;2.0;2.0;1.0;2.0;4.0
+ILLES BALEARS;Organismos Públicos;nan;nan;1.0;1.0;1.0;nan;nan;nan;nan;nan
+ILLES BALEARS;Particulares Hombres;10.0;4.0;6.0;1.0;3.0;5.0;7.0;3.0;5.0;6.0
+ILLES BALEARS;Particulares Mujeres;nan;1.0;nan;1.0;nan;nan;nan;nan;1.0;nan
+ILLES BALEARS;Universidades;3.0;2.0;nan;5.0;4.0;nan;5.0;3.0;2.0;nan
+LA RIOJA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+LA RIOJA;Empresas;8.0;2.0;1.0;1.0;4.0;4.0;1.0;4.0;4.0;2.0
+LA RIOJA;Organismos Públicos;nan;nan;1.0;1.0;nan;nan;nan;1.0;nan;nan
+LA RIOJA;Particulares Hombres;nan;3.0;2.0;2.0;3.0;nan;1.0;2.0;2.0;5.0
+LA RIOJA;Particulares Mujeres;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+LA RIOJA;Universidades;nan;1.0;nan;nan;nan;2.0;1.0;nan;nan;nan
+MADRID;CSIC;111.0;112.0;101.0;95.0;66.0;59.0;56.0;50.0;42.0;26.0
+MADRID;Empresas;151.0;166.0;102.0;74.0;115.0;85.0;94.0;81.0;85.0;83.0
+MADRID;Organismos Públicos;28.0;12.0;14.0;10.0;14.0;13.0;9.0;16.0;2.0;15.0
+MADRID;Particulares Hombres;57.0;68.0;52.0;46.0;52.0;51.0;60.0;43.0;36.0;40.0
+MADRID;Particulares Mujeres;7.0;5.0;5.0;5.0;4.0;7.0;1.0;4.0;5.0;7.0
+MADRID;Universidades;32.0;45.0;45.0;53.0;33.0;35.0;35.0;22.0;31.0;23.0
+MURCIA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+MURCIA;Empresas;8.0;11.0;18.0;11.0;12.0;12.0;13.0;8.0;6.0;14.0
+MURCIA;Organismos Públicos;nan;nan;nan;1.0;1.0;nan;nan;1.0;nan;nan
+MURCIA;Particulares Hombres;7.0;7.0;7.0;15.0;5.0;11.0;16.0;11.0;7.0;9.0
+MURCIA;Particulares Mujeres;nan;nan;nan;nan;1.0;nan;nan;1.0;2.0;nan
+MURCIA;Universidades;4.0;5.0;1.0;3.0;2.0;2.0;3.0;6.0;7.0;nan
+NAVARRA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+NAVARRA;Empresas;36.0;56.0;47.0;30.0;22.0;32.0;18.0;29.0;23.0;19.0
+NAVARRA;Organismos Públicos;12.0;nan;nan;nan;1.0;nan;nan;1.0;nan;nan
+NAVARRA;Particulares Hombres;4.0;16.0;6.0;11.0;5.0;9.0;5.0;8.0;7.0;4.0
+NAVARRA;Particulares Mujeres;nan;nan;2.0;1.0;4.0;2.0;1.0;3.0;3.0;1.0
+NAVARRA;Universidades;2.0;1.0;2.0;3.0;nan;nan;5.0;nan;1.0;1.0
+NO CONSTA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+NO CONSTA;Empresas;3.0;nan;nan;nan;1.0;nan;nan;nan;nan;nan
+NO CONSTA;Organismos Públicos;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+NO CONSTA;Particulares Hombres;nan;nan;nan;nan;1.0;nan;nan;32.0;nan;nan
+NO CONSTA;Particulares Mujeres;nan;nan;nan;nan;nan;nan;nan;3.0;nan;nan
+NO CONSTA;Universidades;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+NO RESIDENTE;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+NO RESIDENTE;Empresas;1.0;5.0;12.0;4.0;6.0;8.0;14.0;10.0;5.0;8.0
+NO RESIDENTE;Organismos Públicos;nan;nan;nan;1.0;1.0;nan;nan;1.0;1.0;nan
+NO RESIDENTE;Particulares Hombres;3.0;5.0;1.0;8.0;2.0;4.0;4.0;5.0;5.0;6.0
+NO RESIDENTE;Particulares Mujeres;nan;nan;nan;nan;nan;nan;1.0;1.0;nan;nan
+NO RESIDENTE;Universidades;3.0;nan;nan;1.0;nan;nan;nan;2.0;nan;nan
+PAIS VASCO;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+PAIS VASCO;Empresas;56.0;57.0;74.0;57.0;59.0;57.0;45.0;54.0;43.0;55.0
+PAIS VASCO;Organismos Públicos;19.0;22.0;nan;1.0;12.0;3.0;10.0;6.0;2.0;nan
+PAIS VASCO;Particulares Hombres;14.0;18.0;13.0;14.0;16.0;17.0;18.0;17.0;11.0;4.0
+PAIS VASCO;Particulares Mujeres;2.0;2.0;1.0;1.0;1.0;1.0;1.0;nan;nan;1.0
+PAIS VASCO;Universidades;3.0;9.0;10.0;8.0;9.0;4.0;1.0;1.0;4.0;4.0
+nan;TOTAL;1.252;1.415;1.3030000000000002;1.255;1.222;1.226;1.155;1.094;1.013;931.0
+CC.AA.;Tipo Solicitante;2009.0;2010.0;2011.0;2012.0;2013.0;2014.0;2015.0;2016.0;2017.0;2018.0
+ANDALUCIA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;1.0
+ANDALUCIA;Empresas;37.0;67.0;53.0;39.0;52.0;58.0;62.0;43.0;36.0;22.0
+ANDALUCIA;Organismos Públicos;1.0;14.0;18.0;30.0;21.0;24.0;27.0;20.0;16.0;17.0
+ANDALUCIA;Particulares Hombres;26.0;25.0;39.0;42.0;40.0;52.0;46.0;46.0;43.0;43.0
+ANDALUCIA;Particulares Mujeres;nan;5.0;2.0;3.0;2.0;7.0;2.0;1.0;10.0;2.0
+ANDALUCIA;Universidades;67.0;69.0;73.0;81.0;60.0;66.0;62.0;31.0;49.0;37.0
+ARAGON;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+ARAGON;Empresas;10.0;14.0;16.0;24.0;15.0;15.0;13.0;18.0;20.0;18.0
+ARAGON;Organismos Públicos;5.0;1.0;2.0;1.0;3.0;nan;1.0;nan;nan;nan
+ARAGON;Particulares Hombres;14.0;12.0;5.0;7.0;7.0;5.0;15.0;9.0;7.0;7.0
+ARAGON;Particulares Mujeres;nan;nan;1.0;1.0;nan;nan;nan;1.0;nan;nan
+ARAGON;Universidades;9.0;12.0;4.0;9.0;6.0;6.0;6.0;5.0;2.0;2.0
+ASTURIAS;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+ASTURIAS;Empresas;9.0;6.0;8.0;9.0;4.0;8.0;4.0;5.0;2.0;1.0
+ASTURIAS;Organismos Públicos;nan;nan;nan;2.0;nan;2.0;1.0;nan;nan;nan
+ASTURIAS;Particulares Hombres;5.0;6.0;6.0;nan;6.0;1.0;1.0;6.0;4.0;5.0
+ASTURIAS;Particulares Mujeres;nan;nan;nan;1.0;nan;nan;1.0;nan;nan;nan
+ASTURIAS;Universidades;3.0;3.0;2.0;3.0;1.0;3.0;3.0;2.0;3.0;1.0
+CANARIAS;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CANARIAS;Empresas;3.0;16.0;9.0;2.0;5.0;8.0;2.0;2.0;9.0;7.0
+CANARIAS;Organismos Públicos;1.0;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CANARIAS;Particulares Hombres;7.0;7.0;7.0;4.0;10.0;8.0;11.0;7.0;10.0;7.0
+CANARIAS;Particulares Mujeres;nan;1.0;nan;nan;1.0;nan;1.0;4.0;1.0;2.0
+CANARIAS;Universidades;2.0;3.0;1.0;1.0;1.0;1.0;1.0;2.0;3.0;nan
+CANTABRIA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CANTABRIA;Empresas;6.0;4.0;6.0;4.0;5.0;3.0;4.0;11.0;13.0;6.0
+CANTABRIA;Organismos Públicos;nan;nan;1.0;nan;1.0;nan;2.0;nan;nan;nan
+CANTABRIA;Particulares Hombres;1.0;3.0;2.0;4.0;2.0;3.0;2.0;3.0;4.0;5.0
+CANTABRIA;Particulares Mujeres;nan;1.0;2.0;nan;nan;nan;nan;nan;nan;1.0
+CANTABRIA;Universidades;1.0;2.0;4.0;5.0;12.0;5.0;3.0;2.0;2.0;nan
+CASTILLA LA MANCHA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CASTILLA LA MANCHA;Empresas;13.0;8.0;12.0;7.0;17.0;4.0;4.0;7.0;2.0;7.0
+CASTILLA LA MANCHA;Organismos Públicos;2.0;nan;nan;1.0;nan;nan;nan;nan;nan;nan
+CASTILLA LA MANCHA;Particulares Hombres;4.0;7.0;5.0;9.0;11.0;9.0;12.0;5.0;9.0;6.0
+CASTILLA LA MANCHA;Particulares Mujeres;1.0;1.0;3.0;nan;2.0;1.0;nan;1.0;1.0;nan
+CASTILLA LA MANCHA;Universidades;nan;6.0;6.0;nan;2.0;1.0;nan;1.0;3.0;2.0
+CASTILLA LEON;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CASTILLA LEON;Empresas;16.0;10.0;7.0;11.0;14.0;14.0;12.0;10.0;10.0;9.0
+CASTILLA LEON;Organismos Públicos;2.0;3.0;3.0;7.0;3.0;4.0;2.0;3.0;nan;nan
+CASTILLA LEON;Particulares Hombres;10.0;11.0;8.0;3.0;11.0;7.0;10.0;7.0;4.0;12.0
+CASTILLA LEON;Particulares Mujeres;1.0;nan;nan;1.0;nan;3.0;1.0;1.0;1.0;nan
+CASTILLA LEON;Universidades;3.0;5.0;4.0;7.0;10.0;8.0;4.0;7.0;8.0;6.0
+CATALUÑA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CATALUÑA;Empresas;89.0;116.0;111.0;121.0;116.0;150.0;133.0;136.0;117.0;113.0
+CATALUÑA;Organismos Públicos;5.0;11.0;2.0;7.0;4.0;3.0;11.0;1.0;1.0;3.0
+CATALUÑA;Particulares Hombres;72.0;88.0;79.0;11.0;61.0;86.0;62.0;58.0;58.0;56.0
+CATALUÑA;Particulares Mujeres;8.0;3.0;9.0;74.0;9.0;8.0;6.0;10.0;8.0;3.0
+CATALUÑA;Universidades;33.0;36.0;39.0;38.0;47.0;20.0;23.0;11.0;7.0;10.0
+CEUTA Y MELILLA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CEUTA Y MELILLA;Empresas;nan;nan;nan;nan;nan;nan;nan;nan;1.0;nan
+CEUTA Y MELILLA;Organismos Públicos;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CEUTA Y MELILLA;Particulares Hombres;nan;nan;nan;nan;nan;nan;2.0;nan;nan;nan
+CEUTA Y MELILLA;Particulares Mujeres;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+CEUTA Y MELILLA;Universidades;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+COMUNIDAD VALENCIANA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+COMUNIDAD VALENCIANA;Empresas;76.0;55.0;64.0;61.0;70.0;59.0;52.0;48.0;63.0;77.0
+COMUNIDAD VALENCIANA;Organismos Públicos;5.0;5.0;5.0;9.0;2.0;1.0;2.0;3.0;nan;1.0
+COMUNIDAD VALENCIANA;Particulares Hombres;41.0;47.0;50.0;44.0;34.0;42.0;34.0;40.0;50.0;33.0
+COMUNIDAD VALENCIANA;Particulares Mujeres;4.0;5.0;7.0;1.0;2.0;10.0;10.0;2.0;7.0;1.0
+COMUNIDAD VALENCIANA;Universidades;34.0;28.0;29.0;36.0;34.0;32.0;38.0;41.0;37.0;30.0
+EXTREMADURA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+EXTREMADURA;Empresas;nan;5.0;nan;2.0;2.0;1.0;1.0;3.0;4.0;1.0
+EXTREMADURA;Organismos Públicos;nan;nan;1.0;nan;1.0;nan;1.0;nan;nan;nan
+EXTREMADURA;Particulares Hombres;3.0;2.0;nan;3.0;3.0;4.0;5.0;5.0;3.0;1.0
+EXTREMADURA;Particulares Mujeres;1.0;nan;nan;nan;nan;1.0;nan;nan;nan;nan
+EXTREMADURA;Universidades;nan;2.0;1.0;4.0;1.0;1.0;1.0;1.0;nan;nan
+GALICIA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+GALICIA;Empresas;9.0;17.0;22.0;22.0;16.0;18.0;13.0;18.0;18.0;15.0
+GALICIA;Organismos Públicos;nan;4.0;1.0;1.0;nan;nan;1.0;nan;nan;nan
+GALICIA;Particulares Hombres;13.0;18.0;18.0;14.0;16.0;15.0;8.0;11.0;12.0;12.0
+GALICIA;Particulares Mujeres;1.0;1.0;1.0;1.0;1.0;nan;nan;1.0;2.0;2.0
+GALICIA;Universidades;14.0;12.0;27.0;23.0;15.0;24.0;10.0;15.0;9.0;10.0
+ILLES BALEARS;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+ILLES BALEARS;Empresas;1.0;3.0;4.0;nan;4.0;2.0;2.0;1.0;2.0;4.0
+ILLES BALEARS;Organismos Públicos;nan;nan;1.0;1.0;1.0;nan;nan;nan;nan;nan
+ILLES BALEARS;Particulares Hombres;10.0;4.0;6.0;1.0;3.0;5.0;7.0;3.0;5.0;6.0
+ILLES BALEARS;Particulares Mujeres;nan;1.0;nan;1.0;nan;nan;nan;nan;1.0;nan
+ILLES BALEARS;Universidades;3.0;2.0;nan;5.0;4.0;nan;5.0;3.0;2.0;nan
+LA RIOJA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+LA RIOJA;Empresas;8.0;2.0;1.0;1.0;4.0;4.0;1.0;4.0;4.0;2.0
+LA RIOJA;Organismos Públicos;nan;nan;1.0;1.0;nan;nan;nan;1.0;nan;nan
+LA RIOJA;Particulares Hombres;nan;3.0;2.0;2.0;3.0;nan;1.0;2.0;2.0;5.0
+LA RIOJA;Particulares Mujeres;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+LA RIOJA;Universidades;nan;1.0;nan;nan;nan;2.0;1.0;nan;nan;nan
+MADRID;CSIC;111.0;112.0;101.0;95.0;66.0;59.0;56.0;50.0;42.0;26.0
+MADRID;Empresas;151.0;166.0;102.0;74.0;115.0;85.0;94.0;81.0;85.0;83.0
+MADRID;Organismos Públicos;28.0;12.0;14.0;10.0;14.0;13.0;9.0;16.0;2.0;15.0
+MADRID;Particulares Hombres;57.0;68.0;52.0;46.0;52.0;51.0;60.0;43.0;36.0;40.0
+MADRID;Particulares Mujeres;7.0;5.0;5.0;5.0;4.0;7.0;1.0;4.0;5.0;7.0
+MADRID;Universidades;32.0;45.0;45.0;53.0;33.0;35.0;35.0;22.0;31.0;23.0
+MURCIA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+MURCIA;Empresas;8.0;11.0;18.0;11.0;12.0;12.0;13.0;8.0;6.0;14.0
+MURCIA;Organismos Públicos;nan;nan;nan;1.0;1.0;nan;nan;1.0;nan;nan
+MURCIA;Particulares Hombres;7.0;7.0;7.0;15.0;5.0;11.0;16.0;11.0;7.0;9.0
+MURCIA;Particulares Mujeres;nan;nan;nan;nan;1.0;nan;nan;1.0;2.0;nan
+MURCIA;Universidades;4.0;5.0;1.0;3.0;2.0;2.0;3.0;6.0;7.0;nan
+NAVARRA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+NAVARRA;Empresas;36.0;56.0;47.0;30.0;22.0;32.0;18.0;29.0;23.0;19.0
+NAVARRA;Organismos Públicos;12.0;nan;nan;nan;1.0;nan;nan;1.0;nan;nan
+NAVARRA;Particulares Hombres;4.0;16.0;6.0;11.0;5.0;9.0;5.0;8.0;7.0;4.0
+NAVARRA;Particulares Mujeres;nan;nan;2.0;1.0;4.0;2.0;1.0;3.0;3.0;1.0
+NAVARRA;Universidades;2.0;1.0;2.0;3.0;nan;nan;5.0;nan;1.0;1.0
+NO CONSTA;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+NO CONSTA;Empresas;3.0;nan;nan;nan;1.0;nan;nan;nan;nan;nan
+NO CONSTA;Organismos Públicos;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+NO CONSTA;Particulares Hombres;nan;nan;nan;nan;1.0;nan;nan;32.0;nan;nan
+NO CONSTA;Particulares Mujeres;nan;nan;nan;nan;nan;nan;nan;3.0;nan;nan
+NO CONSTA;Universidades;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+NO RESIDENTE;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+NO RESIDENTE;Empresas;1.0;5.0;12.0;4.0;6.0;8.0;14.0;10.0;5.0;8.0
+NO RESIDENTE;Organismos Públicos;nan;nan;nan;1.0;1.0;nan;nan;1.0;1.0;nan
+NO RESIDENTE;Particulares Hombres;3.0;5.0;1.0;8.0;2.0;4.0;4.0;5.0;5.0;6.0
+NO RESIDENTE;Particulares Mujeres;nan;nan;nan;nan;nan;nan;1.0;1.0;nan;nan
+NO RESIDENTE;Universidades;3.0;nan;nan;1.0;nan;nan;nan;2.0;nan;nan
+PAIS VASCO;CSIC;nan;nan;nan;nan;nan;nan;nan;nan;nan;nan
+PAIS VASCO;Empresas;56.0;57.0;74.0;57.0;59.0;57.0;45.0;54.0;43.0;55.0
+PAIS VASCO;Organismos Públicos;19.0;22.0;nan;1.0;12.0;3.0;10.0;6.0;2.0;nan
+PAIS VASCO;Particulares Hombres;14.0;18.0;13.0;14.0;16.0;17.0;18.0;17.0;11.0;4.0
+PAIS VASCO;Particulares Mujeres;2.0;2.0;1.0;1.0;1.0;1.0;1.0;nan;nan;1.0
+PAIS VASCO;Universidades;3.0;9.0;10.0;8.0;9.0;4.0;1.0;1.0;4.0;4.0
+nan;TOTAL;1.252;1.415;1.3030000000000002;1.255;1.222;1.226;1.155;1.094;1.013;931.0
