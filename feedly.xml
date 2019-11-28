@@ -76,7 +76,7 @@
             <outline type="rss" text="CIBIR RSS 2.0" title="CIBIR RSS 2.0" xmlUrl="http://www.cibir.es/es/noticias-y-actividades?format=feed&amp;type=rss" htmlUrl="https://www.cibir.es/es/noticias-y-actividades"/>
             <outline type="rss" text="CTCR - Noticias" title="CTCR - Noticias" xmlUrl="http://www.ctcr.es/es/noticias?format=feed&amp;type=rss" htmlUrl="http://www.ctcr.es/es/noticias"/>
             <outline type="rss" text="Noticias , CTIC - CITA" title="Noticias , CTIC - CITA" xmlUrl="https://feedity.com/ctic-cita-es/VFZVVlVR.rss" htmlUrl="http://ctic-cita.es/nc/saladeprensa2/sala-de-prensa/noticias/"/>
-            <outline type="rss" text="Inicio , ADER" title="Inicio , ADER" xmlUrl="https://feedity.com/ader-es/VFZVVlRQ.rss" htmlUrl="http://www.ader.es/"/>
+            <outline type="rss" text="Inicio , ADER" title="Inicio , ADER" xmlUrl="https://feedity.com/ader-es/VFZVVlRQ.rss" htmlUrl="http://www.ader.es/"/>
             <outline type="rss" text="Cámara de Comercio de la Rioja" title="Cámara de Comercio de la Rioja" xmlUrl="https://feedity.com/camararioja-com/VFZVVlRT.rss" htmlUrl="http://www.camararioja.com/inicio/"/>
             <outline type="rss" text="Instituto de Estadistica de La Rioja" title="Instituto de Estadistica de La Rioja" xmlUrl="http://estadisticarss.larioja.org/feed.xml" htmlUrl="http://www.larioja.org/estadistica"/>
             <outline type="rss" text="RSS La Rioja" title="RSS La Rioja" xmlUrl="https://www.larioja.org/larioja-client/cm/comunicacion/rss?locale=es_ES&amp;rssContent=1171776" htmlUrl="https://www.larioja.org/comunicacion/es/rss"/>

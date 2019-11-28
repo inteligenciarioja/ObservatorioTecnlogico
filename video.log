@@ -1,0 +1,64 @@
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+mmal: mmal_vc_component_enable: failed to enable component: ENOSPC
+mmal: camera component couldn't be enabled
+mmal: main: Failed to create camera component
+mmal: Failed to run camera app. Please check for firmware updates
+
+/home/pi/record.sh: 4: /home/pi/record.sh: -fps: not found
+find: '/mnt/video/24032019-170001.h264': No such file or directory
+mmal: mmal_vc_component_enable: failed to enable component: ENOSPC
+mmal: camera component couldn't be enabled
+mmal: main: Failed to create camera component
+mmal: Failed to run camera app. Please check for firmware updates
+
+mmal: mmal_vc_component_enable: failed to enable component: ENOSPC
+mmal: camera component couldn't be enabled
+mmal: main: Failed to create camera component
+mmal: Failed to run camera app. Please check for firmware updates
+
+mmal: mmal_vc_component_enable: failed to enable component: ENOSPC
+mmal: camera component couldn't be enabled
+mmal: main: Failed to create camera component
+mmal: Failed to run camera app. Please check for firmware updates
+
+mmal: Unable to return a buffer to the encoder port
+mmal: mmal_vc_component_enable: failed to enable component: ENOSPC
+mmal: camera component couldn't be enabled
+mmal: main: Failed to create camera component
+mmal: Failed to run camera app. Please check for firmware updates
+
+mmal: mmal_vc_component_enable: failed to enable component: ENOSPC
+mmal: camera component couldn't be enabled
+mmal: main: Failed to create camera component
+mmal: Failed to run camera app. Please check for firmware updates
+
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+find: '/mnt/video/*.h264': No such file or directory
+mmal: mmal_vc_component_enable: failed to enable component: ENOSPC
+mmal: camera component couldn't be enabled
+mmal: main: Failed to create camera component
+mmal: Failed to run camera app. Please check for firmware updates
+

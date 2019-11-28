@@ -124,11 +124,11 @@ for i in range (0, len(rjson ["fundingData"]["GrantTenderObj"])) :
         lista2 = []
 
 # Sacar proyectos en plazo de RED.ES
-display = Display(visible = 0, size = (1024,768))
-display.start()
-browser = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver')
-browser.get('https://sede.red.gob.es/procedimientos')
-element = browser.find_element_by_class_name("titulo")
+#display = Display(visible = 0, size = (1024,768))
+#display.start()
+#browser = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver')
+#browser.get('https://sede.red.gob.es/procedimientos')
+#element = browser.find_element_by_class_name("titulo")
 
 
 auxstr = '\n-----------------------------------\n'.join(listatitle)
@@ -136,9 +136,9 @@ auxstr = '\n-----------------------------------\n'.join(listatitle)
 subject = "European and National Project Review"
 body = ("""Estos son los enlaces a proyectos más interesantes:
 RED.ES
-https://sede.red.gob.es/procedimientos""" + """\n""" + element.text +
+https://sede.red.gob.es/procedimientos""" + """\n""" 
 
-""""\nCDTI
+"""\nCDTI
 https://www.cdti.es/index.asp?MP=1&MS=0&MN=1&r=1920*1080
 
 y los proyectos europeos nuevos son:
@@ -175,4 +175,4 @@ context = ssl.create_default_context()
 with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
     server.login(sender_email, password)
     server.sendmail(sender_email, receiver_email, text)
-browser.close()
+    server.sendmail(sender_email,"amartintezf@larioja.org",text)	
