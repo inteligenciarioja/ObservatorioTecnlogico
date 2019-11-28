@@ -4,7 +4,7 @@ from codaio import Coda
 import ssl
 
 
-API_KEY = 'c5d228f1-a38e-4956-b6e6-f6ceaac089d0'
+API_KEY = ''
 docid="G6ody-h41g"
 tabid = "grid-r2hvl_u-eJ"
 columnid = "c-JLQHCL5TG3"
