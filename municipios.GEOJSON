@@ -1485,7 +1485,8 @@
 			},
 			"properties": {
 				"nombre": "Ábalos",
-				"codigo_ine": "001"
+				"codigo_ine": "001",
+				"population": "340"
 			},
 			"style": {
 				"color": "rgb(212,212,212)",
